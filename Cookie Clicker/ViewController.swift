@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        clickOutput.text = "0"
     }
-
+    
     @IBAction func changeBackgroundColor(_ sender: UIButton) {
         func changeColor() -> UIColor{
             
@@ -28,5 +28,26 @@ class ViewController: UIViewController {
         view.backgroundColor = randomColor
     }
     
+    @IBOutlet weak var clickOutput: UILabel!
+    
+    var click = 0
+    
+    
+    @IBAction func clickMeButton(_ sender: UIButton) {
+        
+        click = click + 1
+        clickOutput.text = "\(click)"
+        
+    }
+    
+    @IBAction func resetButton(_ sender: UIButton) {
+        click = 0
+        clickOutput.text = "\(click)"
+        view.backgroundColor = UIColor.white
+        
+    }
+    
 }
+    
+
 
