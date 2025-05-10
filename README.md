@@ -14,8 +14,7 @@ The following 2 functionality is completed:
 - [ ] Tapping the button changes the screen color to a random color
  
 ## Video Walkthrough
-
-
+https://imgur.com/a/cookie-clicker-demo-tlito7g
 
 ## App Brainstorming (Step 4)
 
